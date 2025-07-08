@@ -8,7 +8,7 @@ A sleek frontend project built using **HTML, CSS, and JavaScript**, featuring:
 
 ## 🚀 Demo
 
-🔗 [View Live on GitHub Pages](https://your-username.github.io/your-repo-name/)
+🔗 [View Live on GitHub Pages](https://arcaneoverlord.github.io/Job-fair-2025-project-1/)
 
 ## 📸 Screenshot
 
