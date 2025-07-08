@@ -1,2 +1,31 @@
-# Job-fair-2025-project-1
-Job fair 2025 project 1 is a responsive single page project with a jobseeker and employer section .employer can view and download registered job sekers data .while job seekers can register and view registered people with limited data like name and picture .This page currently in development this not all functions and features  are available.
+# 💬 Custom Alert with Live Update Form
+
+A sleek frontend project built using **HTML, CSS, and JavaScript**, featuring:
+- Custom-styled alert boxes
+- Form input and live updates
+- Smooth animations and interactions
+- Responsive design
+
+## 🚀 Demo
+
+🔗 [View Live on GitHub Pages](https://your-username.github.io/your-repo-name/)
+
+## 📸 Screenshot
+
+![Screenshot](screenshot.png) <!-- Upload a screenshot to repo and name it screenshot.png -->
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3 (Flexbox, Animations)
+- JavaScript (DOM, Events)
+
+## 🧠 Learning Focus
+
+This project demonstrates:
+- DOM Manipulation
+- Event Listeners
+- Dynamic input handling
+- Real-time UI updates
+
+## 📁 Folder Structure
