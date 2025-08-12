@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>project job fair 2025</title>
+  <style>
+    body{
+      font-family: sans-serif;
+      display: flex; 
+      justify-content: center;
+      
+      height: 100vh;
+      background-color: #f7f7f7;
+      margin: 0;
+    }
+    
+    
+    
+    
+    
+    /*Custom alert*/
+    
+    .alert-box{ 
+      display:flex; 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100vw; 
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6); 
+      justify-content:center; 
+      align-items: center;
+    }
+    
+    .alert-content{ 
+      background-color: #ffffff;
+      padding: 20px; 
+      border-radius: 8px; 
+      width: 300px; 
+      text-align: center; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .alert-content h2{
+      font-size:22px;
+      margin-bottom:20px;
+      color:black;
+      border: 1px;
+      border-color: green;
+    }
+    
+    .alert-content p{ 
+      font-size: 16px; 
+      margin-bottom: 20px; 
+      color: #666; 
+    }
+      
+      
+      .alert-content button{ 
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer
+       
+      }
+      
+      .alert-content button:hover{ background-color: #218838
+      
+      }
+    
+      .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        margin-top: 20px;
+      }
+        
+
+    
+    
+    
+     .glow {
+      animation: glow 1.2s ease-in-out infinite alternate;
+      -webkit-animation: glow 1.2s ease-in-out infinite alternate;
+      -moz-animation: glow 1.2s ease-in-out infinite alternate;
+     }
+
+
+    @keyframes glow {
+      from {
+    text-shadow:
+      0 0 2px black,
+      0 0 4px white,
+      0 0 6px white,
+      0 0 8px blue,
+      0 0 10px blue;
+  }
+      to {
+       text-shadow:
+       0 0 3px #00f0ff,
+       0 0 6px #00f0ff,
+       0 0 9px #9400d3,
+       0 0 12px #9400d3,
+       0 0 15px #9400d3;
+  }
+}
+
+
+/*form*/
+    .main-content{
+      display:none;
+     
+      
+    }
+    
+    .main-content h3{
+      font-size: 20px;
+      justify-content: center;
+      padding-bottom: 20px;
+      
+    }
+    .form-group {
+     width: 100%;
+     margin: 0 auto;
+     display:flex;
+     flex-direction:column;
+     gap:2px;
+    }
+
+    textarea{
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius: 5px;
+    }
+
+
+
+    input[type="file"],
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"] {
+       padding: 10px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+    }
+  
+.row-change > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 140px;
+}
+      
+   
+  
+ 
+     input[type="submit"]{
+      padding: 10px 20px; 
+      background-color: #007bff;
+      color: white;
+      border: none; 
+      border-radius: 5px;
+      cursor: pointer; 
+      font-size: 16px;
+      
+    }
+    
+    input[type="submit"]:hover{ 
+      background-color: #0056b3;
+      
+    }
+    
+    h2, p, label, input, textarea {
+  user-select: none;
+}
+
+/*live preview of form for desktop*/
+
+.split-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block; /* default for mobile */
+}
+
+@media (min-width: 768px) {
+  .split-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+
+   
+    .form-section {
+       flex: 1;
+       width:100%;
+    }
+    
+    
+    .preview-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      padding: 40px;
+      border-left: 2px solid #ddd;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+    @media (max-width:767px){
+     
+  .preview-section {
+    display: none;
+  }
+}
+    
+
+
+    .preview-title {
+       font-size: 18px;
+       font-weight: bold;
+       margin-bottom: 20px;
+       text-transform: uppercase;
+       color: #111;
+}
+
+   .preview-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      width: 100%;
+      max-width: 300px;
+      min-width: 300px;
+      
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+    .preview-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #007bff;
+      margin: 0 auto 20px auto;
+      display: block;
+    }
+
+
+    .preview-item {
+      text-align:center;
+      margin-bottom: 12px;
+    }
+    
+    .preview-item1{
+      margin-top:30px;
+      font-weight:bold;
+      font-size: 25px;
+      text-align:center;
+    }
+    .topspace{
+      margin-top: 25px;
+    }
+
+
+    .preview-item strong {
+      display: block;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 2px;
+      margin-top:px;
+      text-align:center;
+    }
+
+
+    .preview-item span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+   
+     
+     
+
+  
+
+
+  
+
+
+
+
+
+
+  </style>
+  
+</head>
+
+<body>
+  <!--Custom alert-->
+  <div id="customAlert" class="alert-box"> 
+  <div class="alert-content"> 
+     <h2 class="glow">JOB FAIR 2025</h2>
+     
+     <p>Job seekers may register by clicking jobseeker button</p>
+     <p>Employers can find potential candidates in Employer section </p>
+     <div class="button-group">
+     <button id="job">Job seeker</button>
+     <button id="employer">Employer</button>
+         
+       </div>
+     </div> 
+  </div>
+  
+  <!-- form-->
+  
+  <div class="main-content"
+  id="main">
+    <div class="split-container">
+      <div class="form-section">
+    
+<h3>REGISTRATION FORM</h3>
+
+<form action="/register" method="post" enctype="multipart/form-data" autocomplete="on" target="_self" name="registrationForm">
+  <div class="form-group">
+    
+    <label for="username">Name:</label>
+    <input type="text" id="nameinput" name="username" placeholder="Enter your name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="ageinput" name="age" placeholder="Enter your age" required>
+
+    <label for="gender">Gender:</label>
+    <div class="row-change">
+      <input type="radio" id="maleinput" name="gender" value="male" required>
+      <label for="male">Male</label>
+
+      <input type="radio" id="femaleinput" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="otherinput" name="gender" value="other">
+      <label for="other">Other</label>
+    </div>
+
+    <label for="address">Address:</label>
+    <textarea id="addressinput" name="address" placeholder="Enter your address" rows="5" required></textarea>
+    
+    
+    <label for="qualification">Qualification</label>
+    <div class="row-change">
+  <div><input type="radio" id="sslcinput" name="qualification" value="sslc" required> <label for="sslc">SSLC</label></div>
+  <div><input type="radio" id="plustwoinput" name="qualification" value="plustwo"> <label for="plustwo">Plus two</label></div>
+  <div><input type="radio" id="diplomainput" name="qualification" value="diploma"> <label for="diploma">Diploma</label></div>
+  <div><input type="radio" id="graduateinput" name="qualification" value="graduate"> <label for="graduate">Graduate</label></div>
+  <div><input type="radio" id="postgraduateinput" name="qualification" value="postgraduate"> <label for="postgraduate">Post Graduate</label></div>
+</div>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phoneinput" name="mobile" placeholder="Enter your phone number" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="emailinput" name="email" placeholder="Enter your email" required>
+
+    <label for="project">Project (Optional):</label>
+    <input type="text" id="projectinput" name="work" placeholder="Enter your project link">
+
+    <label for="picture">Upload your photo (Optional):</label>
+    <input type="file" id="pictureinput" name="picture">
+
+    <br><br><br>
+    <input type="submit" value="Submit">
+  </div>
+  </div>
+</form>
+     
+     
+<!--live preview for big screens -->
+
+    <div class="preview-section">
+  <div class="preview-title">Live Preview</div>
+  <div class="preview-card">
+    <img src="https://images.unsplash.com/photo-1544502062-f82887f03d1c?q=80&w=959&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile picture" class="preview-image" id="previewImage">
+    
+    <div class="preview-item1">
+      
+      <span id="previewName">UNKNOWN</span>
+    </div>
+
+    <div class="preview-item">
+      <div class="topspace">
+      <strong>Age:</strong>
+      </div>
+      <span id="previewAge">--</span>
+    </div>
+
+    <div class="preview-item">
+      <strong>Qualification:</strong>
+      <span id="previewQualification">--</span>
+    </div>
+
+    <div class="preview-item">
+      <strong>Phone:</strong>
+      <span id="previewPhone">--</span>
+    </div>
+
+    <div class="preview-item">
+      <strong>E-mail:</strong>
+      <span id="previewEmail">--</span>
+    </div>
+
+    <div class="preview-item">
+      <strong>Address:</strong>
+      <span id="previewAddress">--</span>
+    </div>
+
+    <div class="preview-item">
+      <strong>Project:</strong>
+      <span id="previewProject">--</span>
+    </div>
+  </div>
+</div>
+
+
+
+  <script>
+  //custom alert
+  const jobseeker= document.getElementById("job");
+  const employer = document.getElementById("employer");
+  const customAlert=document.getElementById("customAlert");
+  const mainContent=document.getElementById("main");
+  
+  
+  jobseeker.addEventListener('click',
+    function(){
+      customAlert.style.display=
+      "none";
+      mainContent.style.display="block";
+      
+    
+    
+  });
+
+  employer.addEventListener('click',
+    function(){
+     customAlert.style.display="none";
+     mainContent.style.display="none";
+  });
+    
+    //form live preview
+    
+    const name=document.getElementById("nameinput");
+    const previewName=document.getElementById("previewName");
+    const age=document.getElementById("ageinput");
+   const previewAge=document.getElementById("previewAge");
+   const previewQualification = document.getElementById("previewQualification");
+   const qualificationRadios = document.querySelectorAll('input[name="qualification"]');
+   const phone=document.getElementById("phoneinput");
+   const previewPhone=document.getElementById("previewPhone");
+   const email=document.getElementById("emailinput");
+   const previewEmail=document.getElementById("previewEmail");
+   const address=document.getElementById("addressinput");
+   const previewAddress=document.getElementById("previewAddress");
+   const project=document.getElementById("projectinput");
+   const previewProject=document.getElementById("previewProject");
+   const fileInput = document.getElementById("pictureinput");
+   const previewImage = document.getElementById("previewImage");
+   
+
+    
+    
+    name.addEventListener("input",
+      function(){
+      const value=name.value;
+      
+      
+      if (value.trim() === "") {
+        previewName.textContent = "Unknown";
+      } else {
+        previewName.textContent = value;
+      }
+    });
+    
+    
+    age.addEventListener("input",
+      function(){
+        const value=age.value;
+        
+        if (value.trim()=== ""){
+          previewAge.textContent="--";
+          
+        }else{
+          previewAge.textContent=value;
+        }
+      }
+    );
+    
+    
+  
+  qualificationRadios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      if (radio.checked) {
+        previewQualification.textContent = radio.value;
+      }
+    });
+  });
+
+    phone.addEventListener("input",
+      function(){
+        const value=phone.value;
+        if(value.trim()=== ""){
+          previewPhone.textContent="--";
+          
+        }else{
+          previewPhone.textContent=value;
+        }
+        
+      }
+    );
+   
+   
+   email.addEventListener("input",
+      function(){
+        const value=email.value;
+        if(value.trim()=== ""){
+          previewEmail.textContent="--";
+          
+        }else{
+          previewEmail.textContent=value;
+        }
+        
+      }
+    );
+    
+    
+    
+      
+    address.addEventListener("input",
+      function(){
+        const value=address.value;
+        if(value.trim()=== ""){
+          previewAddress.textContent="--";
+          
+        }else{
+          previewAddress.textContent=value;
+        }
+        
+      }
+    );
+    
+    
+    project.addEventListener("input",
+      function(){
+        const value=project.value;
+        if(value.trim()=== ""){
+          previewProject.textContent="--";
+          
+        }else{
+          previewProject.textContent=value;
+        }
+        
+      }
+    );
+    
+    
+     fileInput.addEventListener("change", function () {
+    const file = fileInput.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        previewImage.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+  
+  //submit and database 
+  
+  
+
+   
+   
+   
+  
+  
+
+    
+  </script>
+</body>
+</html>
